@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung dung may tinh</title>
+</head>
+<body>
+    <h3>Caculator</h3>
+    <label>
+        <input id="nhapA" type="text" name="caculator1" />
+        <input id="nhapB" type="text" name="caculator2" /><br>
+        <button id="cong" onclick="phepCong()"> Cong(+) </button>
+        <button id="tru" onclick="phepTru()"> Tru(-) </button>
+        <button id="nhan" onclick="phepNhan()"> Nhan(*) </button>
+        <button id="chia" onclick="phepChia()"> Chia(/) </button>
+    </label>
+    <p id="ketQua"></p>
+    <script>
+        function phepCong() {
+            let A = parseFloat(document.getElementById("nhapA").value);
+            let B = parseFloat(document.getElementById("nhapB").value);
+            let giaTri = A + B;
+            document.getElementById("ketQua").innerHTML = "ket qua : " + giaTri;
+        }
+        function phepTru() {
+            let A = parseFloat(document.getElementById("nhapA").value);
+            let B = parseFloat(document.getElementById("nhapB").value);
+            let giaTri = A - B;
+            document.getElementById("ketQua").innerHTML = "ket qua : " + giaTri;
+        }
+        function phepNhan() {
+            let A = parseFloat(document.getElementById("nhapA").value);
+            let B = parseFloat(document.getElementById("nhapB").value);
+            let giaTri = A * B;
+            document.getElementById("ketQua").innerHTML = "ket qua : " + giaTri;
+        }
+        function phepChia() {
+            let A = parseFloat(document.getElementById("nhapA").value);
+            let B = parseFloat(document.getElementById("nhapB").value);
+            let giaTri = A / B;
+            document.getElementById("ketQua").innerHTML = "ket qua : " + giaTri;
+        }
+    </script>
+<!--    <h3>Caculator</h3>-->
+<!--    <label>-->
+<!--        <input id="nhapA" type="text" name="caculator1" />-->
+<!--        <input id="nhapB" type="text" name="caculator2" /><br>-->
+<!--        <button id="cong" onclick="phepTinh" value="+"> Cong(+) </button>-->
+<!--        <button id="tru" onclick="phepTinh" value="-"> Tru(-) </button>-->
+<!--        <button id="nhan" onclick="phepTinh" value="*"> Nhan(*) </button>-->
+<!--        <button id="chia" onclick="phepTinh" value="/"> Chia(/) </button>-->
+<!--    </label>-->
+<!--    <p id="ketQua"></p>-->
+<!--    <script>-->
+<!--        function phepTinh(demo) {-->
+<!--            let A = parseFloat(document.getElementById("nhapA").value);-->
+<!--            let B = parseFloat(document.getElementById("nhapB").value);-->
+<!--            let giaTri = 0;-->
+<!--            if (demo == "+") {-->
+<!--                giaTri = A + B;-->
+<!--            }else if(demo =="-") {-->
+<!--                giaTri = A - B;-->
+<!--            }else if(demo =="*") {-->
+<!--                giaTri = A * B;-->
+<!--            }else{-->
+<!--                giaTri = A / B;-->
+<!--                        }-->
+<!--                    }-->
+<!--        document.getElementById(ketQua).innerHTML = "ket qua : " + giaTri;-->
+<!--    </script>-->
+</body>
+</html>
