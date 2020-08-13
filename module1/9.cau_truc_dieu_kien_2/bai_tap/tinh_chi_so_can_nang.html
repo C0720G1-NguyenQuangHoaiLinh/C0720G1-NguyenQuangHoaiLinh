@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let width = parseFloat(prompt('nhap can nang'));
+        let height = parseFloat(prompt('nhap chieu cao'));
+        let bmi = width / ( height * height );
+        if (bmi < 18.5 ) {
+            document.write('tong teo như que củi, gió có thể thổi bay');
+        }else if ((bmi < 25) && (bmi >= 18.5 )) {
+            document.write('cân nặng phù hợp với chiều cao, chuẩn rồi !');
+        }else if ((bmi < 30) && (bmi >= 25 )) {
+            document.write('hơi thừa cân nhẹ, chú ý ăn uống điều độ !');
+        }else
+            document.write('tập luyện và ăn kiêng liền đi con heo ơi !');
+        console.log(bmi);
+    </script>
+</body>
+</html>
