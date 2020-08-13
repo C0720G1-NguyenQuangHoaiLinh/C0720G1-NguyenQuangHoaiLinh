@@ -43,8 +43,8 @@
 <!--    </script>-->
     <h3>Caculator</h3>
     <label>
-        <input id="nhapA" type="text" name="caculator1" />
-        <input id="nhapB" type="text" name="caculator2" /><br>
+        <input id="nhapA" type="text" />
+        <input id="nhapB" type="text" /><br>
         <button id="cong" onclick="phepTinh('+')"> Cong(+) </button>
         <button id="tru" onclick="phepTinh('-')"> Tru(-) </button>
         <button id="nhan" onclick="phepTinh('*')"> Nhan(*) </button>
@@ -53,17 +53,27 @@
     <p id="ketQua"></p>
     <script>
         function phepTinh(demo) {
-            let A = parseFloat(document.getElementById("nhapA").value);
-            let B = parseFloat(document.getElementById("nhapB").value);
+            let soA = parseFloat(document.getElementById("nhapA").value);
+            let soB = parseFloat(document.getElementById("nhapB").value);
             let giaTri = 0;
-            if (demo == "+") {
-                giaTri = A + B;
-            } else if (demo == "-") {
-                giaTri = A - B;
-            } else if (demo == "*") {
-                giaTri = A * B;
-            } else {
-                giaTri = A / B;
+            // if (demo === "+") {
+            //     giaTri = soA + soB;
+            // } else if (demo === "-") {
+            //     giaTri = soA - soB;
+            // } else if (demo === "*") {
+            //     giaTri = soA * soB;
+            // } else {
+            //     giaTri = soA / soB;
+            // }
+            switch (demo) {
+                case "+": giaTri = soA + soB;
+                break;
+                case "-": giaTri = soA - soB;
+                break;
+                case "*": giaTri = soA * soB;
+                    break;
+                case "/": giaTri = soA / soB;
+                    break;
             }
             document.getElementById("ketQua").innerHTML = "ket qua : " + giaTri;
         }
