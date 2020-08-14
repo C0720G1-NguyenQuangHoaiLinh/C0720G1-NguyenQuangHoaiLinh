@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // bai 1
+        // let doC = prompt("nhap do C");
+        // doF = doC * 9/5 + 32;
+        // alert("bang " + doF + " do F");
+        // bai 2
+        // let met = prompt("nhap so met");
+        // alert("bang " + (met * 3.2808) + " feet");
+        // bai 4
+        // let a = parseInt(prompt("nhap canh a"));
+        // let b = parseInt(prompt("nhap canh b"));
+        // alert("dien tich hinh chu nhat la : " + a * b);
+        // bai 8
+        // let soNhap = parseInt(prompt("nhap vao 1 so "));
+        // if(120 > soNhap > 0) {
+        //     alert("so tuoi la: " + soNhap);
+        // }else {
+        //     alert(soNhap + " khong phai la so tuoi cua 1 nguoi");
+        // }
+        // bai 9
+        // let a = parseInt(prompt("nhap vao so a"));
+        // let b = parseInt(prompt("nhap vao so b"));
+        // let c = parseInt(prompt("nhap vao so c"));
+        // if(((a > 0)&&(b > 0)&&(c > 0))&&(a + b > c)&&(b + c > a)&&(a + c > b)) {
+        //     alert("a b c la 3 canh cua 1 tam giac");
+        // }else {
+        //     alert("a b c khong phai 3 canh cua 1 tam giac");
+        // }
+        // bai 12
+        let tienVay = parseInt(prompt("nhap so tien vay ban dau"));
+        let soThang = parseInt(prompt("nhap so thang trong hd vay"));
+        if(soThang <= 12) {
+            document.write("lai xuat hang thang la: " + tienVay*0.03);
+        }else if(soThang <= 24) {
+            document.write("lai xuat hang thang la: " + tienVay*0.04);
+        }else {
+            document.write("lai xuat hang thang la: " + tienVay*0.045);
+        }
+    </script>
+</body>
+</html>
