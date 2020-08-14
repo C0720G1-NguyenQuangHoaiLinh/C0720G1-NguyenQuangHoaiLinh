@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game puzzle</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column">
+        <img alt="" src="puzzle1.png" id="top" onclick="click1()" style="width: 50% ; height: 50%"/>
+        <img alt="" src="puzzle2.png" id="mid" onclick="click2()" style="width: 50% ; height: 50%"/>
+        <img alt="" src="puzzle3.png" id="bot" onclick="click3()" style="width: 50% ; height: 50%"/>
+    </div>
+    <script>
+        // let topImg = document.getElementById("top");
+        // let midImg = document.getElementById("mid");
+        // let botImg = document.getElementById("bot");
+        function click1() {
+            if(document.getElementById("top").src === "puzzle1.png") {
+                document.getElementById("top").src = "puzzle2.png" ;
+            }else if(document.getElementById("top").src === "puzzle2.png") {
+                document.getElementById("top").src = "puzzle3.png" ;
+            }else {
+                document.getElementById("top").src = "puzzle1.png" ;
+            }
+        }
+        function click2() {
+            if(document.getElementById("mid").src === "puzzle1.png") {
+                document.getElementById("mid").src = "puzzle2.png" ;
+            }else if(document.getElementById("mid").src === "puzzle2.png") {
+                document.getElementById("mid").src = "puzzle3.png" ;
+            }else {
+                document.getElementById("mid").src = "puzzle1.png" ;
+            }
+        }
+        function click3() {
+            if(document.getElementById("bot").src === "puzzle1.png") {
+                document.getElementById("bot").src = "puzzle2.png" ;
+            }else if(document.getElementById("bot").src === "puzzle2.png") {
+                document.getElementById("bot").src = "puzzle3.png" ;
+            }else {
+                document.getElementById("bot").src = "puzzle1.png" ;
+            }
+        }
+    </script>
+</body>
+</html>
