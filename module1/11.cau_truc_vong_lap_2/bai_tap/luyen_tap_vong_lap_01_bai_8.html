@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <input type="button" onclick="funGame(this.value)" value="Play Now" >
+    </form>
+    <script>
+        function funGame(demo) {
+            for(let i = 0;i < 3;i++){
+                let number = prompt("nhap so muon doan");
+                if(number == 27){
+                alert("chinh xac !");
+                break;
+                }else if (number < 27) {
+                    alert(" > " + number + " hay thu lai");
+                }else {
+                    alert(" < " + number + " hay thu lai");
+                }
+        }
+        }
+    </script>
+</body>
+</html>
