@@ -25,17 +25,39 @@
         //     kQ *= i;
         //     console.log(kQ);
         // }alert(kQ);
+        // bai 3
+        let i = 1;
+        let j = "*";
+        while (i <=5){
+            document.write(j);
+            document.write("<br>");
+            j += "*";
+            i++;
+        }
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        let a = 1;
+        let b = "*"+"*"+"*"+"*"+"*";
+        while (a <=5){
+            document.write(b);
+            document.write("<br>");
+            b -= "*";
+            a++;
+        }
+        // bai 4
+
         // bai 5
-        let tienVay = parseInt(prompt("nhap so tien vay"));
-        let thangVay = parseInt(prompt("nhap so thang vay"));
-        let laiXuat = 0.04;
-        let tongLai = 0;
-        for(let count = 1;count <= thangVay;count++){
-            let tienLai = tienVay * laiXuat;
-            console.log(tienLai);
-            tienVay += tienLai;
-            tongLai += tienLai;
-        }document.write("tong tien lai cua " + thangVay + " thang vay la :" + tongLai);
+        // let tienVay = parseInt(prompt("nhap so tien vay"));
+        // let thangVay = parseInt(prompt("nhap so thang vay"));
+        // let laiXuat = 0.04;
+        // let tongLai = 0;
+        // for(let count = 1;count <= thangVay;count++){
+        //     let tienLai = tienVay * laiXuat;
+        //     console.log(tienLai);
+        //     tienVay += tienLai;
+        //     tongLai += tienLai;
+        // }document.write("tong tien lai cua " + thangVay + " thang vay la :" + tongLai);
     </script>
 </body>
 </html>
