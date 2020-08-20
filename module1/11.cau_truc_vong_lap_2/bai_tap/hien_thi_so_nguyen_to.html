@@ -6,22 +6,40 @@
 </head>
 <body>
     <script>
-        let numbers = prompt("nhap mot so");
-        if(numbers == 0 || numbers == 1) {
-            alert("ko co so nguyen to");
-        }else {
-            for(let a = 2;a <= numbers;a++){
-                let count = 0;
-                for(x = 2; x < a;x++) {
-                    let result = a % x;
-                    if(result == 0) {
-                        count++;
-                    }
-                }if(count == 0){
-                    document.write(a + ", ");
+        // let numbers = prompt("nhap mot so");
+        // if(numbers == 0 || numbers == 1) {
+        //     alert("ko co so nguyen to");
+        // }else {
+        //     for(let a = 2;a <= numbers;a++){
+        //         let count = 0;
+        //         for(x = 2; x < a;x++) {
+        //             let result = a % x;
+        //             if(result == 0) {
+        //                 count++;
+        //             }
+        //         }if(count == 0){
+        //             document.write(a + ", ");
+        //         }
+        //     }
+        // }
+        let ketQua=""
+        let count=0;
+        let N=2;
+        while (count<20){
+            let flag=true;
+            for (let i=2;i<N;i++){
+                if (N%i==0){
+                    flag=false;
+                    break;
                 }
             }
+            if (flag){
+                count++
+                ketQua+=N+","
+            }
+            N++;
         }
+        document.write(ketQua)
     </script>
 </body>
 </html>
