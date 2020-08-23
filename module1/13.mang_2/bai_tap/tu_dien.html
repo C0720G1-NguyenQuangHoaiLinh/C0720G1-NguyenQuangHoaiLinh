@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TU DIEN</title>
+</head>
+<body>
+<script>
+    let anh = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+    let viet = ["mot", "hai", "ba", "bon", "nam", "sau", "bay", "tam", "chin"];
+    timKiem();
+    function timKiem() {
+        let w = prompt("nhap tu can tra");
+        let result = "";
+        for (let i = 0; i < anh.length; i++) {
+            if (anh[i] === w) {
+                result = viet[i];
+                break;
+            } else {
+                result = "khong tim thay";
+            }
+        }
+        alert(result);
+    }
+</script>
+</body>
+</html>

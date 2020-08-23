@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bai 5
+    // let n=parseInt(prompt("Nhập độ dài"));
+    // let array=new Array(n);
+    // for (let i=0;i<array.length;i++){
+    //     array[i]=parseInt(prompt("nhập phần tử"));
+    // }
+    // let a = prompt("nhap vao 1 chuoi");
+    // let array = a.split(" ");
+    // let dem=0;
+    // let result ="";
+    // for(let i=0;i<array.length;i++){
+    //     if (array[i]<0){
+    //         dem++;
+    //         result += "\n" + array[i];
+    //     }
+    // }
+    // alert("có "+dem + " số nguyên âm gồm : " + result);
+    // bai 7
+    // let array = [1,2,2,2,5];
+    // let v = prompt("nhap vao so can xoa");
+    // for (let i = 0 ; i < array.length ; i++){
+    //     if (array[i] == v) {
+    //        array.splice(i,1);
+    //        i--;
+    //     }
+    // }
+    // alert(array);
+    // bai 4
+    // let array = [1, 2, 3, 4, 5, 6, 7];
+    // let size = array.length;
+    // let y = "";
+    // for (let i = 0; i < array.length / 2; i++) {
+    //     y = array[i];
+    //     array[i] = array[size - 1 - i];
+    //     array[size - 1 - i] = y;
+    // }
+    // alert(array);
+    // bai 9
+    // let a = [1,2,3,4];
+    // let b = [5,6,7,8];
+    // let c = [];
+    // for (let i = 0 ; i < a.length ; i++){
+    //     c.push(a[i]);
+    // }
+    // for (let j = 0 ; j < b.length ; j++){
+    //     c.push(b[j]);
+    // }
+    // alert(c);
+    // bai 8
+    // let a = [3,7,1,9,-5,9,-5];
+    // let b = [];
+    //
+    // while (a.length > 0) {
+    //     let max = a[0];
+    //     for (let i = 0 ; i < a.length ; i++){
+    //         if (max <= a[i]){
+    //             max = a[i];
+    //         }
+    //     }
+    //     for (let i = 0 ; i < a.length ; i++){
+    //         if (max == a[i]){
+    //             b.push(max);
+    //         }
+    //     }
+    //     for (let i = 0 ; i < a.length ; i++){
+    //         if (a[i] === max) {
+    //            a.splice(i,1);
+    //            i--;
+    //         }
+    //     }
+    // }
+    // alert(b);
+    // bai them : tìm vị trí của phần tử lớn nhất thứ 2
+    // let a = [1,2,3,9,7,6,9,5,9];
+    // let max = a[0];
+    //     for (let j = 0 ; j < a.length ; j++){
+    //         if ( max <= a[j]){
+    //             max = a[j];
+    //         }
+    //     }
+    // for (let i = 0 ; i < a.length ; i++){
+    //     if ( max === a[i]){
+    //         indexArray.push(i);
+    //     }
+    // }
+    // let count = 0;
+    // let index = 0;
+    // for (let i = 0 ; i < a.length ; i++){
+    //     if ( max === a[i]){
+    //         count++;
+    //         if (count === 2){
+    //             index = i;
+    //             break;
+    //         }
+    //     }
+    // }
+    // alert("so lon nhat" + max + " thu 2 o vi tri "+ index);
+    // bai them : tim gia tri phan tu lon thu 2
+    let a = [1,2,3,9,7,6,9,5,9];
+    let max = a[0];
+        for (let j = 0 ; j < a.length ; j++) {
+            if (max <= a[j]) {
+                max = a[j];
+            }
+        }
+    for (let i = 0 ; i < a.length ; i++) {
+        if (a[i] === max) {
+            a.splice(i, 1);
+            i--;
+        }
+    }
+    max = a[0];
+    for (let k = 0 ; k < a.length ; k++) {
+        if (max <= a[k]) {
+            max = a[k];
+        }
+    }
+    alert(max);
+</script>
+</body>
+</html>
