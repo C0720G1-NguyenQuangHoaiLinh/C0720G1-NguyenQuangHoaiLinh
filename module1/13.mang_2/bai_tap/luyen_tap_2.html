@@ -57,7 +57,7 @@
         let array = ["mon","-tue","-wed","-thu"];
         for (let i = 0 ; i < array.length ; i++){
             array[i] = array[i].split("");
-            for (let j = 0 ; j < array.length ; j++){
+            for (let j = 0 ; j < array[i].length ; j++){
                 if (array[i][j] == "-"){
                     array[i][j] = "_";
                 }
