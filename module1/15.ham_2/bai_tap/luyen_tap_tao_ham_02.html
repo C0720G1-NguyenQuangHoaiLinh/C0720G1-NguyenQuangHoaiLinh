@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bai 1
+    // let a = prompt("nhap so can tinh");
+    // function binhPhuong(giaTri) {
+    //     return giaTri * giaTri;
+    // }
+    // alert(binhPhuong(a));
+
+    // bai 2
+    // let a = prompt("nhap");
+    // function dienTich(banKinh) {
+    //     return banKinh * banKinh * Math.PI;
+    // }
+    // function chuVi(banKinh) {
+    //     return banKinh * Math.PI * 2;
+    // }
+    // document.write(dienTich(a) + "<br>");
+    // document.write(chuVi(a));
+
+    // bai 3
+    // let a = prompt("nhap");
+    // function giaiThua(demo) {
+    //     ketQua = 1;
+    //     for (let i = 1 ; i <= demo ; i++){
+    //         ketQua *= i;
+    //     }
+    //     return ketQua;
+    // }
+    // alert(giaiThua(a));
+
+    // bai 4
+    // let a = prompt("nhap");
+    // function isNotNumber(demo) {
+    //     if (isNaN(demo)){
+    //         return false;
+    //     }else {
+    //         return true;
+    //     }
+    // }
+    // if (isNotNumber(a) == true){
+    //     alert(a + " la ky tu so");
+    // }else {
+    //     alert(a + " khong phai la ky tu so");
+    // }
+
+    // bai 5
+    //  let a = parseInt(prompt("nhap so thu 1"));
+    //  let b = parseInt(prompt("nhap so thu 2"));
+    //  let c = parseInt(prompt("nhap so thu 3"));
+    // function numberMin(a,b,c) {
+    //     if ((b < a)&&(b < c)){
+    //         return b;
+    //     }else if ((c < a)&&(c < b)){
+    //         return c;
+    //     } else {
+    //         return a;
+    //     }
+    // }
+    // alert(numberMin(a,b,c));
+
+    // bai 6
+    // let a = parseFloat(prompt("nhap"));
+    // function isNotNumber(demo) {
+    //     if (!isNaN(demo)&&(Number.isInteger(demo))&&(demo > 0)){
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+    // alert(isNotNumber(a));
+
+    // bai 7
+    // let demo = new Array();
+    // let a = parseFloat(prompt("nhap so thu 1"));
+    // let b = parseFloat(prompt("nhap so thu 2"));
+    // demo[0] = a;
+    // demo[1] = b;
+    // swapByRefer(demo);
+    // alert(demo);
+    // function swapByRefer(array) {
+    //     let tmp = array[0];
+    //     array[0] = array[1];
+    //     array[1] = tmp;
+    // }
+    // bai 8
+    // function daoNguocMang(mang) {
+    //     mang.reverse();
+    //     return mang;
+    // }
+    // let a = [1,2,3,5];
+    // let ketQua = daoNguocMang(a);
+    // alert(ketQua);
+
+    // bai 9
+    // function timKyTuTrongMang(kyTu,mang) {
+    //     let dem = 0;
+    //     for (let i = 0; i < mang.length ; i++){
+    //         if (mang[i]=== kyTu) {
+    //             dem++;
+    //         }
+    //     }
+    //     if (dem !== 0){
+    //         return dem;
+    //     } else {
+    //         return -1;
+    //     }
+    // }
+    // let mang = [1,2,3,1,2,3,1,1];
+    // let a = 1;
+    // let bienDem = timKyTuTrongMang(a,mang);
+    // if (bienDem === -1){
+    //     alert("khong tim thay gia tri trong mang");
+    // } else {
+    //     alert("gia tri " + a + " tim thay trong mang " + bienDem + " lan ");
+    // }
+
+    // bai them : nhập n là độ dài mảng, với điều kiện là 0 < n < 10,nếu ko thỏa mãn điều kiện thì yêu cầu nhập lại
+    // let n;
+    // while (true){
+    //     n = prompt("nhập 1 số nguyên");
+    //     let check = Number.isInteger(parseFloat(n));
+    //     if (0 < n && n < 10 && check){
+    //         break;
+    //     }
+    // }
+    // n = parseInt(n);
+    // let array = new Array(n);
+    // for (let i = 0 ; i < array.length ; i++){
+    //     array[i] = parseInt(prompt("nhap phan tu thu " + i));
+    // }
+    // // alert(array);
+    // // bai them : nhập 1 mảng gồm n phần tử, đk n < 10, tính tổng các số nguyên tố có trong mảng
+    // // let array = [1,2,3,4,5,6,7];
+    // let result = 0;
+    // for (let i = 0 ; i < array.length ; i++){
+    //     isPrime(array[i]);
+    //     if (isPrime(array[i])){
+    //         result += array[i];
+    //     }
+    // }
+    // alert(result);
+    // function isPrime(N) {
+    //     if (N < 2){
+    //         return false;
+    //     }else {
+    //         for (let i=2;i<N;i++){
+    //             if (N%i==0){
+    //                 return false;
+    //             }
+    //         }
+    //         return true;
+    //     }
+    // }
+
+
+    // function kiemTraChuInHoa(kyTu) {
+    //     if (kyTu.charCodeAt(0) > 64 && kyTu.charCodeAt(0) < 96) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+    function layKyTuInHoaTrongChuoi(chuoi) {
+        let ketQua = "";
+        for (let i = 0; i < chuoi.length; i++) {
+            let dieuKien = chuoi.charCodeAt(i) > 64 && chuoi.charCodeAt(i) < 96;
+            if (dieuKien) {
+                ketQua += chuoi[i];
+            }
+        }
+        return ketQua;
+    }
+
+    let chuoi = prompt("nhap chuoi ky tu");
+    alert(layKyTuInHoaTrongChuoi(chuoi));
+
+</script>
+</body>
+</html>

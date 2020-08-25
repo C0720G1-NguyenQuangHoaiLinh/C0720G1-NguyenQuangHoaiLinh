@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+<!--    bai 2-->
+<!--    <input id="nhapso" type="text">-->
+<!--    <button onclick="tangMot()">+1</button>-->
     <script>
         // bai 1
         // let a = "";
@@ -12,8 +15,53 @@
         // function alertMessage() {
         //     alert("xin chao");
         // }
+
         // bai 2
-        
+        // function tangMot() {
+        //     let number = document.getElementById("nhapso").value;
+        //     number++;
+        //     document.getElementById("nhapso").value = number;
+        // }
+
+        // bai 3
+        // let a = parseFloat(prompt("nhap so thu 1: "));
+        // let b = parseFloat(prompt("nhap so thu 2: "));
+        // result = a + b;
+        // soSanh();
+        // function soSanh(soA,soB) {
+        //     if (a > b){
+        //         alert(a + " lon hon " + b);
+        //     }else {
+        //         return result;
+        //     }
+        // }
+
+        // bai 4
+        // function addNumbers() {
+        //     firstNum = 4;
+        //     secondNum = 8;
+        //     result = firstNum + secondNum;
+        //     return result;
+        // }
+        // result = 0;
+        // alert(result);
+        // result = addNumbers();
+        // alert(result);
+
+        // bai 5
+        let starOne = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let starTwo = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+        function funStar(star) {
+            for (let i = 0 ; i < starOne.length ; i++){
+                if (starOne[i]===star){
+                    return starTwo[i];
+                }
+            }
+            return "khong tim thay";
+        }
+        let star = prompt("nhap 1 gia tri tim kiem");
+        alert(funStar(star));
     </script>
 </body>
 </html>
