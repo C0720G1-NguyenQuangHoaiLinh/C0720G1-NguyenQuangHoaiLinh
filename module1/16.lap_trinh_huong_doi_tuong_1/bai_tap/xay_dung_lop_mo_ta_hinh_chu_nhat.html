@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    class Rectangle {
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+
+        tinhDienTich() {
+            return this.dai * this.rong;
+        }
+
+        tinhChuVi() {
+            return (this.dai + this.rong) * 2;
+        }
+
+        veHinh() {
+            let c = document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.fillRect(20, 20, this.dai, this.rong);
+            // cach 2
+            // ctx.rect(20, 20, this.dai, this.rong);
+            // ctx.fillStyle = "red";
+            // ctx.fill(); (đổ màu )
+            // ctx.stroke(); ( nét bút mặc định màu đen)
+        }
+    }
+    let hinhChuNhat = new Rectangle(500,300);
+    hinhChuNhat.veHinh();
+    alert(hinhChuNhat.tinhDienTich());
+    alert(hinhChuNhat.tinhChuVi());
+</script>
+</body>
+</html>
