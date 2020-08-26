@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(doC) {
+            this.doC = doC;
+        }
+        chuyenDoF(){
+            return (this.doC * 1.8) + 32;
+        }
+        chuyenDoK(){
+            return this.doC + 273.15;
+        }
+    }
+    let temperature = new Temperature(25);
+    document.write(temperature.doC + " chuyen sang do F la " + temperature.chuyenDoF()+ "<br>");
+    document.write(temperature.doC + " chuyen sang do K la " + temperature.chuyenDoK());
+</script>
+</body>
+</html>
