@@ -28,7 +28,9 @@
         alert("rentDays : " + rentDays);
         alert("typeService : " + typeService);
         alert("typeRoom : " + typeRoom);
-
+        alert("Price list : " + "\n" + "Villa 500$/ 1 ngày" + "\n" + "House 300$/1 ngày" + "\n" + "Room: 100$/1 ngày");
+        let priceRoom = prompt("Input priceRoom : ");
+        alert("Pay : " + priceRoom * rentDays * (1 - discount/100));
     </script>
 </body>
 </html>

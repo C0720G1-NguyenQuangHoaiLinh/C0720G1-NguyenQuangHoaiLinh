@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor() {
+            this.weight = 10;
+        }
+
+        decrease() {
+            this.weight--;
+        }
+
+        isEmpty() {
+            if (this.weight <= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        isMale() {
+            if (this.gender === "Male") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        setGender(gender) {
+            this.gender = gender;
+        }
+
+        checkApple(apple) {
+            if (apple.isEmpty()) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        eatApple(apple) {
+            if (apple.getWeight() > 0) {
+                apple.weight--;
+                this.weight++;
+            } else {
+                console.log("tao da het");
+            }
+        }
+
+        say(text) {
+            console.log(this.name + " noi : " + text);
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getWeight() {
+            console.log("trong luong cua : " + this.name + this.weight);
+        }
+    }
+
+    let apple = new Apple();
+    let human1 = new Human("Adam", "Male", 55);
+    let human2 = new Human("Eva", "Female", 45);
+
+    human1.say("Eva an tao di");
+    human2.say("okay");
+    human2.setName("Eva");
+    human2.setGender("Female");
+    human1.setName("Adam");
+    human1.setGender("Male");
+    while (apple.getWeight() > 0) {
+        human1.eatApple(apple);
+        human2.eatApple(apple);
+        human1.getWeight();
+        human2.getWeight();
+        human1.checkApple(apple);
+        console.log(apple.getWeight());
+    }
+    console.log("ket thuc");
+</script>
+</body>
+</html>
