@@ -16,21 +16,18 @@
         let quantityIncluded = prompt("Input quantityIncluded: ");
         let rentDays = prompt("Input rentDays: ");
         let typeService = prompt("Input typeService: ");
-        let typeRoom = prompt("Input typeRoom: ");
-        alert("Name : " + name);
-        alert("Cmnd : " + cmnd);
-        alert("birthday : " + brith);
-        alert("email : " + email);
-        alert("address : " + address);
-        alert("typeCustomer : " + typeCustomer);
-        alert("discount : " + discount);
-        alert("quantityIncluded : " + quantityIncluded);
-        alert("rentDays : " + rentDays);
-        alert("typeService : " + typeService);
-        alert("typeRoom : " + typeRoom);
         alert("Price list : " + "\n" + "Villa 500$/ 1 ngày" + "\n" + "House 300$/1 ngày" + "\n" + "Room: 100$/1 ngày");
+        let typeRoom = prompt("Input typeRoom: ");
         let priceRoom = prompt("Input priceRoom : ");
-        alert("Pay : " + priceRoom * rentDays * (1 - discount/100));
+        let totalPay = priceRoom * parseFloat(rentDays) * (1 - parseFloat(discount)/100);
+        alert("Name : " + name + "\n" +
+                "Cmnd : " + cmnd + "\n" +
+                "birthday : " + brith + "\n" +
+                "email : " + email + "\n" +
+                "address : " + address + "\n" +
+                "typeCustomer : " + typeCustomer + "\n" +
+                "totalPay : " + totalPay);
+
     </script>
 </body>
 </html>
